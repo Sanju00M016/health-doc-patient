@@ -1,0 +1,14 @@
+Create Database on local manually
+First Time
+flask db init          # Initializes the migration directory
+flask db migrate -m "Initial migration"  # Detects model changes
+flask db upgrade       # Applies the migration to the database
+flask run
+
+whenever you change your model in datbase, run the below command to update the schema
+flask db migrate
+flask db upgrade 
+
+
+flask run
+
